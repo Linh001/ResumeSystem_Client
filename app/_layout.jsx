@@ -29,18 +29,11 @@ useEffect(()=>{
 if(!fontsLoaded&&!error) return null
   return (
     <Stack>
-      <Stack.Screen name="index" options={{
-        headerShown: false,
-        title: 'Talent Nexa',
-        headerStyle: {
-          backgroundColor: '#000',
-        },
-        headerTintColor: '#fff',
-        headerTitleStyle: {
-          fontWeight: 'bold',
-        },
-      }}/>
-    </Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="search/[query]" options={{ headerShown: false }} />
+      </Stack>
   )
 }
 
